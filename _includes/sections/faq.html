@@ -1,0 +1,32 @@
+<!-- TODO 
+- [] 右に+アイコン、開いてるときは-アイコンに変更
+-->
+<section class="faq">
+  <div class="headline">
+    <h1 class="title">FAQ</h1>
+    <p class="title-sub">よくある質問</p>
+  </div>
+  <div class="container">
+    <div class="faq__body">
+      <amp-accordion id="my-accordion" disable-session-states expand-single-section animate>
+        <section class="list-faq" id="section1">
+          <h2 class="d-flex"><span>Q</span> Lorem1 ipsum dolor, sit amet consectetur.</h2>
+          <p>Content in section 1.</p>
+        </section>
+        <section class="list-faq" id="section2">
+          <h2 class="d-flex"><span>Q</span> Lorem2 ipsum dolor, sit amet consectetur.</h2>
+          <div>Content in section 2.</div>
+        </section>
+        <section class="list-faq" id="section3">
+          <h2 class="d-flex"><span>Q</span> Lorem3 ipsum dolor, sit amet consectetur.</h2>
+          <div>Content in section 2.</div>
+        </section>
+      </amp-accordion>
+    </div>
+    {% if page.title == 'top' %}
+    <div class="faq__button d-flex justify-content-center">
+      <a class="btn btn__outline-gray" href="#">More</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

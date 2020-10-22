@@ -1,0 +1,22 @@
+div {
+  box-sizing: border-box;
+}
+body {
+  color: $color_main;
+  font-size: 18px;
+  font-family: roboto;
+  line-height: 1.6;
+}
+a {
+  color: $color_main;
+  text-decoration: none;
+  transition: .2s;
+  &:hover {
+    opacity: .8;
+    text-decoration: none;
+  }
+}
+
+.color-key {
+  color: $color_key;
+}

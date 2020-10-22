@@ -1,0 +1,18 @@
+{
+  "items": [{
+    "skills": [
+      {
+        "name": "Photoshop",
+        "progress": 75
+      },
+      {
+        "name": "XD",
+        "progress": 100
+      },
+      {
+        "name": "Figma",
+        "progress": 75
+      }
+    ]
+  }]
+}

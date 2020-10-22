@@ -1,0 +1,27 @@
+.headline {
+  text-align: center;
+  .title {
+    position: relative;
+    margin: 0;
+    color: $color_title;
+    font-size: 36px;
+    font-weight: bold;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: $color_key;
+    }
+  }
+  .title-sub {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: $color_title;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

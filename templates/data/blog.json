@@ -1,0 +1,54 @@
+{
+  "items": [{
+    "posts": [
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Build a killer outfit.",
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "https://placehold.it/400x300"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "kim-myeong.amp.html",
+        "post-category": "Fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+        "post-title": "New1 Textile & Basics Shop Opens in Soho",
+        "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Build a killer outfit.",
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "https://placehold.it/400x300"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "kim-myeong.amp.html",
+        "post-category": "Fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+        "post-title": "New2",
+        "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Build a killer outfit.",
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "https://placehold.it/400x300"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "kim-myeong.amp.html",
+        "post-category": "Fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+        "post-title": "New3",
+        "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
+      }
+    ]
+  }]
+}

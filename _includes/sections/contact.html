@@ -1,0 +1,65 @@
+<section class="contact" id="contact">
+  <div class="headline">
+    <h1 class="title">Contact</h1>
+    <p class="title-sub">お問い合わせ</p>
+  </div>
+  <div class="container">
+    <div class="contact__body">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-6 col-lg-12">
+              <div class="contact__address">
+                <p class="title">ADDRESS</p>
+                <p class="text mt-3">4th Floor, Plot No.22,<br>
+        145 Murphy Canyon Rd. <br>
+        San Diego CA 2028</p>
+                <div class="text-box mt-3 d-flex align-items-center">
+                  <span>{% include icons/phone.html %}</span>
+                  <p class="text">(060) 444 434 444</p>
+                </div>
+                <div class="text-box mt-1 d-flex align-items-center">
+                  <span class="mt-1">{% include icons/mail.html %}</span>
+                  <p class="text">chat@sample.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-12">
+              <div class="contact__follow">
+                <p class="title">FOLLOW ME</p>
+                <ul class="nav d-flex">
+                  <li><a href="#">{% include icons/facebook.html %}</a></li>
+                  <li><a href="#">{% include icons/twitter.html %}</a></li>
+                  <li><a href="#">{% include icons/instagram.html %}</a></li>
+                  <li><a href="#">{% include icons/github.html %}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="contact__form">
+            <p class="title">SEND US A NOTE</p>
+            <form target="_top">
+              <div class="mt-3 mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="mb-3">
+                <label for="mail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="text" class="form-label">Content</label>
+                <textarea class="form-control" id="text" rows="4"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn__shadow">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+.list-service {
+  display: flex;
+  &__image {
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    svg {
+      fill: $color_key;
+    }
+  }
+  &__body {
+    .title {
+      margin: 0;
+      color: $color_title;
+      line-height: 1;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .text {
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.list-faq {
+  margin-bottom: 20px;
+  .i-amphtml-accordion-header {
+    line-height: 1.2;
+    cursor: pointer;
+    background-color: $color_bg_section;
+    padding: 10px 20px;
+    border: 1px solid $color_border;
+    color: $color_title;
+    font-size: 20px;
+    font-weight: normal;
+    &:focus {
+      outline: none;
+    }
+    span {
+      margin-right: 12px;
+      color: #20c997;
+      font-size: 24px;
+    }
+  }
+  .i-amphtml-accordion-content {
+    padding: 15px 25px;
+  }
+}

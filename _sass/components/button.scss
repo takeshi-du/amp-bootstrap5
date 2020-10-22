@@ -1,0 +1,35 @@
+.btn {
+  border-radius: 50px;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+
+  &__outline {
+    border: 2px solid $color_key;
+    color: $color_key;
+    &:hover {
+      color: #fff;
+      background-color: $color_key;
+    }
+  }
+  &__outline-gray {
+    border: 2px solid $color_gray;
+    color: $color_gray;
+    &:hover {
+      color: #fff;
+      background-color: $color_gray;
+    }
+  }
+  &__shadow {
+    color: #fff;
+    background-color: $color_key;
+    border: none;
+    padding: 15px 25px;
+    box-shadow: 0 3px 10px -3px rgba(0,0,0,.3);
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

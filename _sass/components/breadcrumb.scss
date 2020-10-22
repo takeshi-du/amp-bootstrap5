@@ -1,0 +1,13 @@
+.breadcrumb {
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: $color_bg_section;
+  .nav {
+    li {
+      padding: 0 5px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}

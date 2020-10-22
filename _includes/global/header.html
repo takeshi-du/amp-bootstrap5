@@ -1,0 +1,53 @@
+<!-- TODO 
+- [] 画面スクロールしたらヘッダー固定表示（背景付き）
+-->
+<header class="header">
+  <div class="header__bg"></div>
+  <div class="header__content">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="header__logo">
+        <h1 class="m-0">LOGO</h1>
+      </div>
+      <button class="header__btn d-lg-none" on="tap:sidebar1.toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+      </button>
+      <div class="header__nav d-none d-lg-block" id="headerNav"></div>
+      <div class="header__sns d-none d-lg-block" id="headrSns"></div>
+    </div>
+  </div>
+  <div class="header__body">
+    <p class="title-sub">Welcome</p>
+    <p class="title">I'm a Designer.</p>
+    <p class="text">based in Los Angeles, California.</p>
+    <a class="btn btn__outline" href="#">About Me</a>
+  </div>
+</header>
+<amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+  <button class="sidebar__btn" on="tap:sidebar1.toggle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+  </button>
+  <nav toolbar="(min-width: 767px)" toolbar-target="headerNav">
+    <ul class="sidebar__nav nav">
+      <li><a href="./top.amp.html">Home</a></li>
+      <li><a href="./about.amp.html">About</a></li>
+      <li><a href="./work.amp.html">Work</a></li>
+      <li><a href="./faq.amp.html">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="dropdown">
+        <a class="dropdown__toggle" href="#">Menu</a>
+        <ul class="dropdown__menu">
+          <li class="dropdown__item"><a href="#">Menu</a></li>
+          <li class="dropdown__item"><a href="#">Menu</a></li>
+          <li class="dropdown__item"><a href="#">Menu</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <nav toolbar="(min-width: 767px)" toolbar-target="headrSns">
+    <ul class="sidebar__sns nav">
+      <li><a href="#">{% include icons/facebook.html %}</a></li>
+      <li><a href="#">{% include icons/twitter.html %}</a></li>
+      <li><a href="#">{% include icons/dribble.html %}</a></li>
+    </ul>
+  </nav>
+</amp-sidebar>

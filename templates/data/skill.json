@@ -1,0 +1,22 @@
+{
+  "items": [{
+    "skills": [
+      {
+        "name": "React",
+        "progress": 80
+      },
+      {
+        "name": "PHP",
+        "progress": 100
+      },
+      {
+        "name": "Wordpress",
+        "progress": 80
+      },
+      {
+        "name": "EC-CUBE",
+        "progress": 100
+      }
+    ]
+  }]
+}

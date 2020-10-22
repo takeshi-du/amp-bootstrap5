@@ -1,0 +1,125 @@
+.header {
+  position: relative;
+  height: 100vh;
+  min-height: 580px;
+  background-color: #000;
+  &.header__page {
+    height: auto;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('./assets/img/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    opacity: .3;
+  }
+  &__content {
+    position: relative;
+    padding: 10px 0;
+    color: #fff;
+  }
+  &__btn {
+    appearance: none;
+    background: none;
+    border: none;
+    fill: #fff;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__nav {
+    .nav > li {
+      padding: 0 15px;
+      > a {
+        color: #fff;
+      }
+    }
+  }
+  &__sns {
+    .nav > li {
+      padding: 0 10px;
+    }
+    svg {
+      fill: #fff;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__body {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    p {
+      margin-bottom: 0;
+    }
+    .title-sub {
+      font-size: 42px;
+      font-weight: bold;
+    }
+    .title {
+      margin-top: 25px;
+      font-size: 84px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    .text {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  #sidebar1 {
+    background-color: $color_key;
+    color: #fff;
+    min-width: 250px !important;
+  }
+  .sidebar__btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    background-color: darken($color_key, 5%);
+    fill: #fff;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .sidebar__nav {
+    display: block;
+    a {
+      display: block;
+      padding: 10px 15px;
+      color: #ffffff;
+      font-size: 20px;
+    }
+    svg {
+      fill: #fff;
+    }
+  }
+  .sidebar__sns {
+    margin-top: 20px;
+    a {
+      padding: 10px 15px;
+      color: #ffffff;
+      font-size: 20px;
+    }
+    svg {
+      fill: #fff;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+<section class="about">
+  <div class="headline">
+    <h1 class="title">About Me</h1>
+    <p class="title-sub">私について</p>
+  </div>
+  <div class="container">
+    <div class="about__body">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="about__text">
+            <p class="title">I'm <span class="color-key">Simone Olivia</span>, a Web Developer</p>
+            <p class="text">I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="about__image">
+            <amp-img src="./assets/img/people.jpg" width=600 height=300 layout="responsive" alt=""></amp-img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about__skills">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about__skill">
+            <p class="title">Develop Skill</p>
+            {% raw %}
+            <amp-list width="auto" height="200" layout="fixed-height" src="./data/skill.json">
+              <template type="amp-mustache">
+                <div class="row">
+                  {{#skills}}
+                  <div class="skill-box">
+                    <p class="label d-flex justify-content-between">
+                      <span>{{name}}</span>
+                      <span>{{progress}}%</span>
+                    </p>
+                    <div class="progress">
+                      <div class="progress-bar" style="width:{{progress}}%;"></div>
+                    </div>
+                  </div>
+                  {{/skills}}
+                </div>
+              </template>
+            </amp-list>
+            {% endraw %}
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about__skill">
+            <p class="title">Design Skill</p>
+            {% raw %}
+            <amp-list width="auto" height="200" layout="fixed-height" src="./data/skill-design.json">
+              <template type="amp-mustache">
+                <div class="row">
+                  {{#skills}}
+                  <div class="skill-box">
+                    <p class="label d-flex justify-content-between">
+                      <span>{{name}}</span>
+                      <span>{{progress}}%</span>
+                    </p>
+                    <div class="progress">
+                      <div class="progress-bar" style="width:{{progress}}%;"></div>
+                    </div>
+                  </div>
+                  {{/skills}}
+                </div>
+              </template>
+            </amp-list>
+            {% endraw %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if page.title == 'top' %}
+    <div class="about__button d-flex justify-content-center">
+      <a class="btn btn__outline-gray" href="#">More Skill</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

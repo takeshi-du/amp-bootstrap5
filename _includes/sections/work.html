@@ -1,0 +1,47 @@
+<!-- TODO 
+- [] tab-nav追加,タブ選んだらstateに保存
+- [] stateの値でwork表示絞り込み
+-->
+<section class="work">
+  <div class="headline">
+    <h1 class="title">Work</h1>
+    <p class="title-sub">実績</p>
+  </div>
+  <div class="container">
+    <div class="work__body">
+      {% raw %}
+      <amp-list
+        width="auto"
+        height="500"
+        layout="fixed-height"
+        src="./data/work.json"
+      >
+        <template type="amp-mustache">
+          <div class="row">
+            {{#works}}
+            <div class="col-lg-4">
+              <div class="work__item card-work">
+                <amp-img class="card-work__image" src="{{thumbnail}}" width=400 height=300 layout="responsive" alt=""></amp-img>
+                <div class="card-work__body">
+                  <ul class="card-work__meta">
+                    <li class="category">{{category}}</li>
+                    <li class="date">{{date}}</li>
+                  </ul>
+                  <p class="card-work__title">{{title}}</p>
+                  <p class="card-work__text">{{text}}</p>
+                </div>
+              </div>
+            </div>
+            {{/works}}
+          </div>
+        </template>
+      </amp-list>
+      {% endraw %}
+      {% if page.title == 'top' %}
+      <div class="work__button d-flex justify-content-center">
+        <a class="btn btn__outline-gray" href="#">More Work</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
